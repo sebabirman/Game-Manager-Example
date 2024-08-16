@@ -13,6 +13,7 @@ public class GameLogic : MonoBehaviour
     private bool isNotEnded;
     public float negativeOffset = 1;
 
+    public AudioClip clipSpaceKey;
     // Start is called before the first frame update
     void Start()
     {
