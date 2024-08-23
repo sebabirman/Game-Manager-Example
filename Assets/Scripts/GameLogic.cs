@@ -47,7 +47,7 @@ public class GameLogic : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.R))
             {
-                //cambia a la escena Results
+                GameManager.Instance.changescene("Results");
             }
         }
         
@@ -83,5 +83,6 @@ public class GameLogic : MonoBehaviour
     void GameEnded()
     {
         txtStartDirections.text = "Press P to play again or R.";
+        GameManager.Instance.score = time;
     }
 }

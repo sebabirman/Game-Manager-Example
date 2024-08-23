@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public GameManager Instance;
+    public static GameManager Instance;
+    public float score = 0;
+    public int lives = 3;
 
     private void Awake()
     {
